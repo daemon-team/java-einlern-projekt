@@ -5,8 +5,12 @@ public class SeqProgramm {
                 int param1= Integer.parseInt(args[0]);
                 for(int i= 1; i <= param1; i++) {
                     Thread.sleep(1000);
-                    System.out.println(i);
-                }      
+                    if (i % 2 == 0) {
+                        System.out.println(i);
+                    } else {
+                        System.err.println(i);
+                    }
+                }          
             }
             if (args.length == 2) {
                 int param1= Integer.parseInt(args[0]);
