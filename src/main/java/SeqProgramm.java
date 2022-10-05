@@ -17,7 +17,6 @@ public class SeqProgramm {
                 Schrittweite= Integer.parseInt(args[1]);
                 Endwert= Integer.parseInt(args[2]);
             }
-            System.out.println("start: " + start + '\n' + "Schrittweite: " + schrittweite + '\n' + "end: " + end);
             for(int i= Startwert; i <= Endwert; i= i + Schrittweite) {
                 Thread.sleep(1000);
                 if (i % 2 == 0) {
