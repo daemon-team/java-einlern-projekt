@@ -8,6 +8,10 @@ public class SeqProgramm {
             int schrittweite = 1;
             int maxDurchgang = 0;
             int jetztDurchgang = 1;
+            if (args.length == 0) {
+                System.out.println("fehlender Operand");
+                System.exit(0);
+            }
             if (args.length == 1) {
             	startwert= 1;
                 endwert= Integer.parseInt(args[0]);
