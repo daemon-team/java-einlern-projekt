@@ -26,13 +26,34 @@ public class SeqProgramm {
                 endwert = Integer.parseInt(args[2]);
             }
             maxDurchgang = ((endwert - startwert) / schrittweite) + 1;
+	    // START-A----START-A----START-A----START-A----START-A----START-A----
+	    //
+	    // Die nachfolgende Schleife steht sinnbildlich für ein kompliziertes
+	    // Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+	    // "schwer verständlich" und unübersichtlich sein. Deshalb will man
+	    // es nur an einer Stelle haben
+	    //
             for (int i = startwert; jetztDurchgang <= maxDurchgang; jetztDurchgang++, i = i + schrittweite) {
+		// START-B----START-B----START-B----START-B----START-B----START-B----
+		//
+		// Die nachfolgende Pause steht sinnbildlich für ein weiteres kompliziertes
+		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
+		// es nur an einer Stelle haben
                 if (pause == true) {
                     Thread.sleep(1000);
                     if (ausgabe == false) {
                         System.out.println(i);
                     }
                 }
+		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
+
+		// START-C----START-C----START-C----START-C----START-C----START-C----
+		//
+		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
+		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
+		// es nur an einer Stelle haben
                 if (ausgabe == true) {
                     if (i % 2 == 0) {
                         System.out.println(i);
@@ -40,10 +61,13 @@ public class SeqProgramm {
                         System.err.println(i);
                     }
                 }
+		// ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
+
                 if (pause == false && ausgabe == false) {
                     System.out.println(i);
                 }
             }     
+	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
         } catch (InterruptedException e) {
             System.out.println(e);
         } catch (ArrayIndexOutOfBoundsException e) {
