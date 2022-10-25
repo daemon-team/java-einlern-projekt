@@ -42,9 +42,6 @@ public class SeqProgramm {
 		// es nur an einer Stelle haben
                 if (pause == true) {
                     Thread.sleep(1000);
-                    if (ausgabe == false) {
-                        System.out.println(i);
-                    }
                 }
 		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
 
@@ -60,13 +57,10 @@ public class SeqProgramm {
                     } else {
                         System.err.println(i);
                     }
+                } else {
+                System.out.println(i);
                 }
 		// ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
-
-                if (pause == false && ausgabe == false) {
-                    System.out.println(i);
-                }
-            }     
 	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
         } catch (InterruptedException e) {
             System.out.println(e);
