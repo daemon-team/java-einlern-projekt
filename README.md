@@ -43,7 +43,7 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 ## SeqPause
 
--[SeqPause.java](src/main/java/SeqPause.java) ... Java-Implementierung vom Linux-Tool `seq`
+- [SeqPause.java](src/main/java/SeqPause.java) ... Java-Implementierung vom Linux-Tool `seq`
 
 
 ### Anforderungen
@@ -59,7 +59,7 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 ## SeqOutErr
 
-- [SeqOutErr.java](scr/main/java/SeqOutErr.java) .. Java-Implementierung vom Linux-Tool `seq`
+- [SeqOutErr.java](src/main/java/SeqOutErr.java) .. Java-Implementierung vom Linux-Tool `seq`
 
 
 ### Anforderungen
@@ -75,7 +75,7 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 ## SeqPauseOutErr.java
 
-- [SeqPauseOutErr.java](scr/main/java/SeqPauseOutErr.java) Java-Implementierung vom Linux-Tool `seq`
+- [SeqPauseOutErr.java](src/main/java/SeqPauseOutErr.java) Java-Implementierung vom Linux-Tool `seq`
 
 ### Anforderungen
 - "Kompatibel" zu
