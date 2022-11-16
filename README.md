@@ -1,7 +1,7 @@
 # java-einlern-projekt
 
 Dies ist das Java-Einlern-Projekt für Mahmud.
-Aktuell sind diese Teilprogramme implementiert:
+Aktuell sind diese Teilprogramme implementiert
 
 
 ## SeqProgramm
