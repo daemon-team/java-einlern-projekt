@@ -1,13 +1,15 @@
 # java-einlern-projekt
 
-Dies ist das Java-Einlern-Projekt für Mahmud.
-Aktuell sind diese Teilprogramme implementiert
+Dies ist das Java-Einlern-Projekt für Mahmud. 
+Aktuell sind diese Teilprogramme implementiert:
 
+- [SeqProgramm.java](src/main/java/SeqProgramm.java)... Java-Implementierung vom Linux-Tool `seq` mit Feature Flags
+- [Seq.java](src/main/java/Seq.java)... Einfache Java-Implementierung vom Linux-Tool `seq`
+- [SeqPause.java](src/main/java/SeqPause.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause zwischen den Ausgaben
+- [SeqOutErr.java](src/main/java/SeqOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit wechselndem Ausgabe-Kanal
+- [SeqPauseOutErr.java](src/main/java/SeqPauseOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause und wechselndem Ausgabe-Kanal
 
 ## SeqProgramm
-
-- [SeqProgramm.java](src/main/java/SeqProgramm.java) ... Java-Implementierung vom Linux-Tool `seq`
-
 
 ### Anforderungen
 
@@ -30,8 +32,6 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 ## Seq
 
-- [Seq.java](src/main/java/Seq.java) ... Java-Implementierung vom Linux-Tool `seq`
-
 ### Anforderungen
 - "Kompatibel" zu
   - `seq` (Aufruf ohne Argument)
@@ -42,9 +42,6 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 
 ## SeqPause
-
-- [SeqPause.java](src/main/java/SeqPause.java) ... Java-Implementierung vom Linux-Tool `seq`
-
 
 ### Anforderungen
 - "Kompatibel" zu
@@ -59,9 +56,6 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 ## SeqOutErr
 
-- [SeqOutErr.java](src/main/java/SeqOutErr.java) .. Java-Implementierung vom Linux-Tool `seq`
-
-
 ### Anforderungen
 - "Kompatibel" zu
   - `seq` (Aufruf ohne Argument)
@@ -74,8 +68,6 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 
 
 ## SeqPauseOutErr.java
-
-- [SeqPauseOutErr.java](src/main/java/SeqPauseOutErr.java) Java-Implementierung vom Linux-Tool `seq`
 
 ### Anforderungen
 - "Kompatibel" zu
