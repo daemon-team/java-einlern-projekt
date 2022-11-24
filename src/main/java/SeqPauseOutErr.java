@@ -1,3 +1,4 @@
+package seq;
 public class SeqPauseOutErr {
     public static void main(String[] args) {
         try {

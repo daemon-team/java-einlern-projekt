@@ -34,23 +34,23 @@ public class SeqProgramm {
 	    // es nur an einer Stelle haben
 	    //
             for (int i = startwert; jetztDurchgang <= maxDurchgang; jetztDurchgang++, i = i + schrittweite) {
-		// START-B----START-B----START-B----START-B----START-B----START-B----
-		//
-		// Die nachfolgende Pause steht sinnbildlich für ein weiteres kompliziertes
-		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
-		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
-		// es nur an einer Stelle haben
+                // START-B----START-B----START-B----START-B----START-B----START-B----
+                //
+                // Die nachfolgende Pause steht sinnbildlich für ein weiteres kompliziertes
+                // Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+                // "schwer verständlich" und unübersichtlich sein. Deshalb will man
+                // es nur an einer Stelle haben
                 if (pause == true) {
                     Thread.sleep(1000);
                 }
-		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
+                // ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
 
-		// START-C----START-C----START-C----START-C----START-C----START-C----
-		//
-		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
-		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
-		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
-		// es nur an einer Stelle haben
+                // START-C----START-C----START-C----START-C----START-C----START-C----
+                //
+                // Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
+                // Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+                // "schwer verständlich" und unübersichtlich sein. Deshalb will man
+                // es nur an einer Stelle haben
                 if (ausgabe == true) {
                     if (i % 2 == 0) {
                         System.out.println(i);
@@ -58,10 +58,11 @@ public class SeqProgramm {
                         System.err.println(i);
                     }
                 } else {
-                System.out.println(i);
+                    System.out.println(i);
                 }
-		// ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
-	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
+                // ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
+                // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
+            }
         } catch (InterruptedException e) {
             System.out.println(e);
         } catch (ArrayIndexOutOfBoundsException e) {

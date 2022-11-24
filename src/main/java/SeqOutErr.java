@@ -1,3 +1,4 @@
+package seq;
 public class SeqOutErr {
     public static void main(String[] args) {
             int startwert = 1;
