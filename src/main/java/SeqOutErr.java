@@ -37,9 +37,9 @@ public class SeqOutErr {
 		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
 		// es nur an einer Stelle haben
                 if (startwert % 2 == 0) {
-                    System.err.println(startwert);
+                    UtilPrint.doOutput(System.err,startwert);
                 } else {
-                    System.out.println(startwert);
+                    UtilPrint.doOutput(System.out,startwert);
                 }
 		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
             }

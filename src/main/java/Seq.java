@@ -30,7 +30,7 @@ public class Seq {
 	    // es nur an einer Stelle haben
     	    //
             for (int jetztDurchgang = 1, maxDurchgang = ((endwert - startwert) / schrittweite) + 1 ; jetztDurchgang <= maxDurchgang; jetztDurchgang++, startwert = startwert + schrittweite) {
-                System.out.println(startwert);
+                UtilPrint.doOutput(System.out,startwert);
             }
             // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
     }       

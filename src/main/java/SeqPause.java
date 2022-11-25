@@ -38,7 +38,7 @@ public class SeqPause {
 		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
 		// es nur an einer Stelle haben
                 Thread.sleep(1000);
-                System.out.println(startwert);
+                UtilPrint.doOutput(System.out,startwert);
 		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
 	    }
 	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
