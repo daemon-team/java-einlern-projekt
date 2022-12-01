@@ -1,6 +1,8 @@
-package seq;
-public class SeqOutErr {
+package com.daemonspoint.seq;
+
+public class SeqPause {
     public static void main(String[] args) {
+        try {
             int startwert = 1;
             int endwert = 0;
             int schrittweite = 1;
@@ -32,18 +34,20 @@ public class SeqOutErr {
             for (int jetztDurchgang = 1, maxDurchgang = ((endwert - startwert) / schrittweite) + 1 ; jetztDurchgang <= maxDurchgang; jetztDurchgang++, startwert = startwert + schrittweite) {
 		// START-B----START-B----START-B----START-B----START-B----START-B----
 		//
-		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
+		// Die nachfolgende Pause steht sinnbildlich für ein weiteres kompliziertes
 		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
 		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
 		// es nur an einer Stelle haben
-                if (startwert % 2 == 0) {
-                    UtilPrint.doOutput(System.err,startwert);
-                } else {
-                    UtilPrint.doOutput(System.out,startwert);
-                }
+                Thread.sleep(1000);
+                UtilPrint.doOutput(System.out,startwert);
 		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
-            }
+	    }
 	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("fehlender Operand");
+        }
     }
 }
 

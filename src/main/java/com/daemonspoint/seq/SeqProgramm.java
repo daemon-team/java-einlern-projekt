@@ -1,3 +1,5 @@
+package com.daemonspoint.seq;
+
 public class SeqProgramm {
     public static void main(String[] args) {
         try {

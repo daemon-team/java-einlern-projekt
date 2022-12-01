@@ -1,7 +1,7 @@
-package seq;
-public class SeqPauseOutErr {
+package com.daemonspoint.seq;
+
+public class Seq {
     public static void main(String[] args) {
-        try {
             int startwert = 1;
             int endwert = 0;
             int schrittweite = 1;
@@ -29,36 +29,11 @@ public class SeqPauseOutErr {
 	    // Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
 	    // "schwer verständlich" und unübersichtlich sein. Deshalb will man
 	    // es nur an einer Stelle haben
-	    //
+    	    //
             for (int jetztDurchgang = 1, maxDurchgang = ((endwert - startwert) / schrittweite) + 1 ; jetztDurchgang <= maxDurchgang; jetztDurchgang++, startwert = startwert + schrittweite) {
-		// START-B----START-B----START-B----START-B----START-B----START-B----
-		//
-		// Die nachfolgende Pause steht sinnbildlich für ein weiteres kompliziertes
-		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
-		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
-		// es nur an einer Stelle haben
-                Thread.sleep(1000);
-		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
-
-		// START-C----START-C----START-C----START-C----START-C----START-C----
-		//
-		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
-		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
-		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
-		// es nur an einer Stelle haben
-                if (startwert % 2 == 0) {
-                    UtilPrint.doOutput(System.err,startwert);
-                } else {
-                    UtilPrint.doOutput(System.out,startwert);
-                }
-		// ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
+                UtilPrint.doOutput(System.out,startwert);
             }
-	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
-        } catch (InterruptedException e) {
-            System.out.println(e);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("fehlender Operand");
-        }
-    }
+            // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
+    }       
 }
 

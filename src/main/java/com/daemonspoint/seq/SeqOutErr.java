@@ -1,5 +1,6 @@
-package seq;
-public class Seq {
+package com.daemonspoint.seq;
+
+public class SeqOutErr {
     public static void main(String[] args) {
             int startwert = 1;
             int endwert = 0;
@@ -28,11 +29,22 @@ public class Seq {
 	    // Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
 	    // "schwer verständlich" und unübersichtlich sein. Deshalb will man
 	    // es nur an einer Stelle haben
-    	    //
+	    //
             for (int jetztDurchgang = 1, maxDurchgang = ((endwert - startwert) / schrittweite) + 1 ; jetztDurchgang <= maxDurchgang; jetztDurchgang++, startwert = startwert + schrittweite) {
-                UtilPrint.doOutput(System.out,startwert);
+		// START-B----START-B----START-B----START-B----START-B----START-B----
+		//
+		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
+		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
+		// es nur an einer Stelle haben
+                if (startwert % 2 == 0) {
+                    UtilPrint.doOutput(System.err,startwert);
+                } else {
+                    UtilPrint.doOutput(System.out,startwert);
+                }
+		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
             }
-            // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
-    }       
+	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
+    }
 }
 

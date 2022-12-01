@@ -1,5 +1,6 @@
-package seq;
-public class SeqPause {
+package com.daemonspoint.seq;
+
+public class SeqPauseOutErr {
     public static void main(String[] args) {
         try {
             int startwert = 1;
@@ -38,9 +39,21 @@ public class SeqPause {
 		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
 		// es nur an einer Stelle haben
                 Thread.sleep(1000);
-                UtilPrint.doOutput(System.out,startwert);
 		// ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----ENDE-B----
-	    }
+
+		// START-C----START-C----START-C----START-C----START-C----START-C----
+		//
+		// Die nachfolgende "Ausgabeweiche" steht sinnbildlich für ein drittes kompliziertes
+		// Konstrukt, das sich über mehrere Bildschirmseiten "zieht". Es soll
+		// "schwer verständlich" und unübersichtlich sein. Deshalb will man
+		// es nur an einer Stelle haben
+                if (startwert % 2 == 0) {
+                    UtilPrint.doOutput(System.err,startwert);
+                } else {
+                    UtilPrint.doOutput(System.out,startwert);
+                }
+		// ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----ENDE-C----
+            }
 	    // ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----ENDE-A----
         } catch (InterruptedException e) {
             System.out.println(e);
