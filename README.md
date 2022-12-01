@@ -3,11 +3,11 @@
 Dies ist das Java-Einlern-Projekt für Mahmud. 
 Aktuell sind diese Teilprogramme implementiert:
 
-- [SeqProgramm.java](src/main/java/SeqProgramm.java)... Java-Implementierung vom Linux-Tool `seq` mit Feature Flags
-- [Seq.java](src/main/java/Seq.java)... Einfache Java-Implementierung vom Linux-Tool `seq`
-- [SeqPause.java](src/main/java/SeqPause.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause zwischen den Ausgaben
-- [SeqOutErr.java](src/main/java/SeqOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit wechselndem Ausgabe-Kanal
-- [SeqPauseOutErr.java](src/main/java/SeqPauseOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause und wechselndem Ausgabe-Kanal
+- [SeqProgramm.java](src/main/java/com/daemonspoint/seq/SeqProgramm.java)... Java-Implementierung vom Linux-Tool `seq` mit Feature Flags
+- [Seq.java](src/main/java/com/daemonspoint/seq/Seq.java)... Einfache Java-Implementierung vom Linux-Tool `seq`
+- [SeqPause.java](src/main/java/com/daemonspoint/seq/SeqPause.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause zwischen den Ausgaben
+- [SeqOutErr.java](src/main/java/com/daemonspoint/seq/SeqOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit wechselndem Ausgabe-Kanal
+- [SeqPauseOutErr.java](src/main/java/com/daemonspoint/seq/SeqPauseOutErr.java)... Java-Implementierung vom Linux-Tool `seq` mit Pause und wechselndem Ausgabe-Kanal
 
 ## SeqProgramm
 
