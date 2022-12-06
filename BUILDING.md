@@ -6,46 +6,12 @@ Um das Java Projekt zu bauen, braucht man folgendes:
 
 ### Repo Klonen
 
-Um das Java-Programm überhaupt starten zu können, muss man das Github Repository erstmal klonen
-Mit: 
+Um das Java-Programm überhaupt starten zu können, muss man das Github Repository erstmal klonen mit: 
 ```
 git clone (repo-link)
 ```
 
-
-### Starten mit Java...
-
-Nach dem man das Repo geklont hat, muss man das Programm zuerst kompilieren, mit ```javac``` und dem argument ```-d```
-Als erstes sollte man zunächst in den Ordner wechseln in dem die QuellCodes sind.
-(src/main/java/com/daemonspoint/seq)
-Im Terminal gibt man nun folgendes ein:
-```
-javac -d . Seq.java UtilPrint.java 
-```
-Wenn man keine Fehlermeldung bekommt, hat man alles richtig gemacht.
-
-Um das Programm nun zu starten benutzt man den Befehl
-```
-java com.daemonspoint.seq.Seq 10
-```
-
-Nun sollte man eine Ausgabe sehen.
-
-```
-uli-1
-uli-2
-uli-3
-.
-.
-.
-```
-
-Meine Programme können mit bis zu 3 Startargumenten aufgerufen werden.
-
-Dieser Vorgang kann auch mit den anderen .java Dateien durchgespielt werden.
-
-
-### Starten mit GradleW
+### Bauen mit GradleW
 
 Es ist nicht nötig Gradle manuell zu installieren,da Gradle ein Tool names "Gradle Wrapper" hat, mit dem ist es möglich Gradle zu starten.
 
@@ -76,6 +42,20 @@ For troubleshooting, visit https://help.gradle.org
 BUILD SUCCESSFUL in 1s
 1 actionable task: 1 executed
 ```
+
+### Bauen ohne GradleW
+
+Nach dem man das Repo geklont hat, muss man das Programm zuerst kompilieren, mit ```javac``` und dem argument ```-d```
+Als erstes sollte man zunächst in den Ordner wechseln in dem die QuellCodes sind.(src/main/java/com/daemonspoint/seq)  
+Im Terminal gibt man nun folgendes ein:
+```
+javac -d . Seq.java UtilPrint.java 
+```
+Wenn man keine Fehlermeldung bekommt, hat man alles richtig gemacht.
+
+
+### Ausführen mit GradleW
+
 Nachdem das abgeschlossen ist, kann das Java Projekt ausgeführt werden:
 ```
 ./gradlew run
@@ -88,3 +68,28 @@ Es können bis zu 3 startargumente eingegeben werden, getrennt werden die Starta
 ```
 ./gradlew run --args="10 20 30"
 ```
+
+### Ausführen ohne GradleW
+
+Um das Programm nun zu starten benutzt man den Befehl
+```
+java com.daemonspoint.seq.Seq 10
+```
+
+Nun sollte man eine Ausgabe sehen.
+
+```
+uli-1
+uli-2
+uli-3
+.
+.
+.
+```
+
+Meine Programme können mit bis zu 3 Startargumenten aufgerufen werden.
+
+Dieser Vorgang kann auch mit den anderen .java Dateien durchgespielt werden.
+- SeqPause.java
+- SeqOutErr.java
+- SeqPauseOutErr.java
