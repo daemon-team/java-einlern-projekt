@@ -18,8 +18,9 @@ jobs:
       - uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-      - name: Archive test report
-        uses: actions/upload-artifact@v2
+      - name: .Class files Upload
+        uses: actions/upload-artifact@v3
         with:
-          name: Test report
-          path: build/reports/tests/test
+          name: .Class files
+          path: build/classes/java/main/com/daemonspoint/seq/
+          if-no-files-found: warn
