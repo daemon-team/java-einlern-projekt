@@ -6,3 +6,4 @@
 out/
 !gradle-wraper.jar
 !gradle-wrapper.properties
+src/test/
