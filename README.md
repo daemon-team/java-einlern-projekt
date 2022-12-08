@@ -79,4 +79,8 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
 - 1 Sekunde Pause zwischen zwei Ausgaben
   - Implementierung an genau einer Stelle!   
 - Getrennte Ausgabekanäle für gerade/ungerade Zahlen
+
+
   - Implementierung an genau einer Stelle!
+  
+  
