@@ -80,3 +80,5 @@ Die nachfolgenden Anforderungen sollen vorerst nicht umgesetzt werden:
   - Implementierung an genau einer Stelle!   
 - Getrennte Ausgabekanäle für gerade/ungerade Zahlen
   - Implementierung an genau einer Stelle!
+  
+  
