@@ -22,5 +22,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: .Class files
-          path: build/classes/java/main/com/daemonspoint/seq/
+          path: build/classes/java/main/
           if-no-files-found: warn
+
