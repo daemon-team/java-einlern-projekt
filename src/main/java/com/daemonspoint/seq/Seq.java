@@ -2,6 +2,7 @@ package com.daemonspoint.seq;
 
 public class Seq {
     public static void main(String[] args) {
+            das hier ist eine Fehlerzeile
             int startwert = 1;
             int endwert = 0;
             int schrittweite = 1;
