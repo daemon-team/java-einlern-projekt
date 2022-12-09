@@ -17,9 +17,10 @@ jobs:
           distribution: 'adopt'
       - uses: gradle/gradle-build-action@v2
         with:
-          arguments:
-            - build
-            - test
+          arguments: build
+      - uses: gradle/gradle-build-action@v2
+        with:
+          arguments: test
       - name: .Class files Upload
         uses: actions/upload-artifact@v3
         with:
