@@ -1,4 +1,4 @@
-# Obsolete wege zum starten des Java-Projekts
+# Obsolete Abläufe
 
 ## Bauen Ohne Graldew
 
@@ -6,6 +6,7 @@ Nach dem man das Repo geklont hat, muss man das Programm zuerst kompilieren, mit
 Als erstes sollte man zunächst in den Ordner wechseln in dem die QuellCodes sind.(src/main/java/com/daemonspoint/seq)  
 Im Terminal gibt man nun folgendes ein:
 ```
+cd src/main/java/com/daemonspoint/seq
 javac -d . Seq.java UtilPrint.java 
 ```
 Wenn man keine Fehlermeldung bekommt, hat man alles richtig gemacht.
