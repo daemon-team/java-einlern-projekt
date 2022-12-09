@@ -29,8 +29,8 @@ jobs:
           name: .Class files
           path: build/classes/java/main/
           if-no-files-found: warn
-      - name: Error Report
+      - name: Test Report Upload
         uses: actions/upload-artifact@v3
         with:
-          name: Error Report
+          name: Test Report
           path: build/reports/tests/test/
