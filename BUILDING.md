@@ -6,18 +6,19 @@ Um das Java Projekt zu bauen, braucht man folgendes:
 
 ### Repo Klonen
 
-Um das Java-Programm überhaupt starten zu können, muss man das Github Repository erstmal klonen mit: 
+Um das Java-Programm überhaupt starten zu können, muss man das Github Repository erstmal klonen.
+Dies geschieht mit folgedem Befehl:  
 ```
-git clone (repo-link)
+git clone git@github.com:daemon-team/java-einlern-projekt.git
 ```
 
-### Bauen mit GradleW
+### Bauen
 
-Es ist nicht nötig Gradle manuell zu installieren,da Gradle ein Tool names "Gradle Wrapper" hat, mit dem ist es möglich Gradle zu starten.
+Das Projekt wird mit Gradle gebaut. Es ist nicht nötig Gradle manuell zu installieren,da Gradle ein Tool names "Gradle Wrapper" hat, mit dem ist es möglich Gradle zu starten.
 
 Sobald das Repo angelegt ist, kann man den 'Gradle Wrapper' starten:
 ```
-./gradlew build
+./gradlew
 ```
 Wenn man folgende Ausgabe erhält hat man bis hier her alles richtig gemacht:
 ```
@@ -43,28 +44,17 @@ BUILD SUCCESSFUL in 1s
 1 actionable task: 1 executed
 ```
 
-### Ausführen mit GradleW
-
-Nachdem das abgeschlossen ist, kann das Java Projekt ausgeführt werden:
+Nun kann man das Projekt mit folgendem Befehl bauen:
 ```
-./gradlew run
-```
-In meinem Projekt werden auch noch Startargumente Verlangt, diese werden mit der Option ```--args=""``` mitgegeben.
-```
-./gradlew run --args="10"
-```
-Es können bis zu 3 startargumente eingegeben werden, getrennt werden die Startargumente mit einem Leerzeichen
-```
-./gradlew run --args="10 20 30"
+./gradlew build
 ```
 
-### Ausführen ohne GradleW
+### Ausführen
 
-Nach ausführen des Befehls ```./gradlew build``` wird ein Ordner namens "Build" angelegt. In diesem Ordner wird im Unterordner "Classes", die klassen der Quellcodes abgespeichert.  
-Um Diese Klassen auszuführen muss man zunächst in folgendes Verzeichnis wechseln "java-einlern-projekt/build/classes/java/main"  
-Das Programm lässt sich nun Starten mit folgendem Befehl:  
+Nach ausführen des Befehls ```./gradlew build``` wird ein Ordner namens "Build" angelegt. In diesem Ordner wird im Unterordner "Classes", die Klassen der Quellcodes abgespeichert.  
+Um diese Klassen auszuführen, benutzt man diesen Befehl:    
 ```
-java com.daemonspoint.seq.Seq 10
+java -cp build/classes/java/main com.daemonspoint.seq.Seq 10
 ```
 Nun sollte man eine Ausgabe sehen.
 
