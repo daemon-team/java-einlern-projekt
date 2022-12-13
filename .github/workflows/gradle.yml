@@ -28,9 +28,9 @@ jobs:
           name: .Class files
           path: build/classes/java/main/
           if-no-files-found: warn
+  if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
   Test:
     runs-on: ubuntu-latest
-    if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
     steps:
       - name: Test Report Upload
         uses: actions/upload-artifact@v3
