@@ -27,7 +27,7 @@ jobs:
           if-no-files-found: warn
   Test:
     runs-on: ubuntu-latest
-    if: github.repository == 'java-einlern-projekt/test-report'
+    if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
     steps:
       - name: Test Report Upload
         uses: actions/upload-artifact@v3
