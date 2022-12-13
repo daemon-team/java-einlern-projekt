@@ -28,7 +28,7 @@ jobs:
           name: .Class files
           path: build/classes/java/main/
           if-no-files-found: warn
-  if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
+
   Test:
     runs-on: ubuntu-latest
     steps:
