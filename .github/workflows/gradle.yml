@@ -29,12 +29,12 @@ jobs:
           path: build/classes/java/main/
           if-no-files-found: warn
       - name: Gradlew test
-        if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
+        if: ${{github.repository == 'daemon-team/java-einlern-projekt/test-report'}}
         uses: gradle/gradle-build-action@v2
         with:
             arguments: test
       - name: Test-report upload
-        if: github.repository == 'daemon-team/java-einlern-projekt/test-report'
+        if: ${{github.repository == 'daemon-team/java-einlern-projekt/test-report'}}
         uses: actions/upload-artifact@v3
         with:
           name: Test Report
