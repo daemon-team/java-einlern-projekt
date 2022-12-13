@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: [main]
+    branches: [main, test-report]
   pull_request:
     branches: [main]
 jobs:
@@ -19,18 +19,21 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-      - name: Gradlew test
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: test
       - name: .Class files Upload
         uses: actions/upload-artifact@v3
         with:
           name: .Class files
           path: build/classes/java/main/
           if-no-files-found: warn
-      - name: Test Report Upload
-        uses: actions/upload-artifact@v3
-        with:
-          name: Test Report
-          path: build/reports/tests/test/
+  if: github.repository == 'java-einlern-projekt/test-report
+  runs on: ubuntu-latest
+  steps:
+    - name: Test Report Upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: Test Report
+        path: build/reports/tests/test/
+    - name: Gradlew test
+      uses: gradle/gradle-build-action@v2
+      with:
+        arguments: test
