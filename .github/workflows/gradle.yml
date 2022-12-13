@@ -25,15 +25,16 @@ jobs:
           name: .Class files
           path: build/classes/java/main/
           if-no-files-found: warn
-  if: github.repository == 'java-einlern-projekt/test-report'
-  runs on: ubuntu-latest
-  steps:
-    - name: Test Report Upload
-      uses: actions/upload-artifact@v3
-      with:
-        name: Test Report
-        path: build/reports/tests/test/
-    - name: Gradlew test
-      uses: gradle/gradle-build-action@v2
-      with:
-        arguments: test
+  Test:
+    runs-on: ubuntu-latest
+    if: github.repository == 'java-einlern-projekt/test-report'
+    steps:
+      - name: Test Report Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: Test Report
+          path: build/reports/tests/test/
+      - name: Gradlew test
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: test
