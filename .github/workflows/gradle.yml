@@ -2,11 +2,11 @@ name: CI
 on:
   push:
     branches:
-      - main
-      - test-report
+      - 'main'
+      - 'test-report'
   pull_request:
     branches:
-      - main
+      - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
           path: build/classes/java/main/
           if-no-files-found: warn
       - name: Gradlew test
-        if: ${{github.repository == 'daemon-team/java-einlern-projekt/test-report'}}
+        if: github.repository == 'java-einlern-projekt/test-report'
         uses: gradle/gradle-build-action@v2
         with:
             arguments: test
